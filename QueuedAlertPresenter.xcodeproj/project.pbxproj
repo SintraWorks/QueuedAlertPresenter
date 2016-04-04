@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DFC50B71CB280C400E5132B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC50B61CB280C400E5132B /* AppDelegate.swift */; };
+		6DFC50B91CB280C400E5132B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC50B81CB280C400E5132B /* ViewController.swift */; };
+		6DFC50BC1CB280C400E5132B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFC50BA1CB280C400E5132B /* Main.storyboard */; };
+		6DFC50BE1CB280C400E5132B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFC50BD1CB280C400E5132B /* Assets.xcassets */; };
+		6DFC50C11CB280C400E5132B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFC50BF1CB280C400E5132B /* LaunchScreen.storyboard */; };
+		6DFC50CC1CB280C400E5132B /* QueuedAlertPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC50CB1CB280C400E5132B /* QueuedAlertPresenterTests.swift */; };
+		6DFC50D71CB280C400E5132B /* QueuedAlertPresenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC50D61CB280C400E5132B /* QueuedAlertPresenterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DFC50C81CB280C400E5132B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DFC50AB1CB280C300E5132B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DFC50B21CB280C300E5132B;
+			remoteInfo = QueuedAlertPresenter;
+		};
+		6DFC50D31CB280C400E5132B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DFC50AB1CB280C300E5132B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DFC50B21CB280C300E5132B;
+			remoteInfo = QueuedAlertPresenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DFC50B31CB280C300E5132B /* QueuedAlertPresenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QueuedAlertPresenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFC50B61CB280C400E5132B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DFC50B81CB280C400E5132B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DFC50BB1CB280C400E5132B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DFC50BD1CB280C400E5132B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DFC50C01CB280C400E5132B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DFC50C21CB280C400E5132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFC50C71CB280C400E5132B /* QueuedAlertPresenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueuedAlertPresenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFC50CB1CB280C400E5132B /* QueuedAlertPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuedAlertPresenterTests.swift; sourceTree = "<group>"; };
+		6DFC50CD1CB280C400E5132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFC50D21CB280C400E5132B /* QueuedAlertPresenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueuedAlertPresenterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFC50D61CB280C400E5132B /* QueuedAlertPresenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuedAlertPresenterUITests.swift; sourceTree = "<group>"; };
+		6DFC50D81CB280C400E5132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DFC50B01CB280C300E5132B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFC50C41CB280C400E5132B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFC50CF1CB280C400E5132B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DFC50AA1CB280C300E5132B = {
+			isa = PBXGroup;
+			children = (
+				6DFC50B51CB280C400E5132B /* QueuedAlertPresenter */,
+				6DFC50CA1CB280C400E5132B /* QueuedAlertPresenterTests */,
+				6DFC50D51CB280C400E5132B /* QueuedAlertPresenterUITests */,
+				6DFC50B41CB280C300E5132B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DFC50B41CB280C300E5132B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DFC50B31CB280C300E5132B /* QueuedAlertPresenter.app */,
+				6DFC50C71CB280C400E5132B /* QueuedAlertPresenterTests.xctest */,
+				6DFC50D21CB280C400E5132B /* QueuedAlertPresenterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DFC50B51CB280C400E5132B /* QueuedAlertPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				6DFC50B61CB280C400E5132B /* AppDelegate.swift */,
+				6DFC50B81CB280C400E5132B /* ViewController.swift */,
+				6DFC50BA1CB280C400E5132B /* Main.storyboard */,
+				6DFC50BD1CB280C400E5132B /* Assets.xcassets */,
+				6DFC50BF1CB280C400E5132B /* LaunchScreen.storyboard */,
+				6DFC50C21CB280C400E5132B /* Info.plist */,
+			);
+			path = QueuedAlertPresenter;
+			sourceTree = "<group>";
+		};
+		6DFC50CA1CB280C400E5132B /* QueuedAlertPresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DFC50CB1CB280C400E5132B /* QueuedAlertPresenterTests.swift */,
+				6DFC50CD1CB280C400E5132B /* Info.plist */,
+			);
+			path = QueuedAlertPresenterTests;
+			sourceTree = "<group>";
+		};
+		6DFC50D51CB280C400E5132B /* QueuedAlertPresenterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DFC50D61CB280C400E5132B /* QueuedAlertPresenterUITests.swift */,
+				6DFC50D81CB280C400E5132B /* Info.plist */,
+			);
+			path = QueuedAlertPresenterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DFC50B21CB280C300E5132B /* QueuedAlertPresenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFC50DB1CB280C400E5132B /* Build configuration list for PBXNativeTarget "QueuedAlertPresenter" */;
+			buildPhases = (
+				6DFC50AF1CB280C300E5132B /* Sources */,
+				6DFC50B01CB280C300E5132B /* Frameworks */,
+				6DFC50B11CB280C300E5132B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QueuedAlertPresenter;
+			productName = QueuedAlertPresenter;
+			productReference = 6DFC50B31CB280C300E5132B /* QueuedAlertPresenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DFC50C61CB280C400E5132B /* QueuedAlertPresenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFC50DE1CB280C400E5132B /* Build configuration list for PBXNativeTarget "QueuedAlertPresenterTests" */;
+			buildPhases = (
+				6DFC50C31CB280C400E5132B /* Sources */,
+				6DFC50C41CB280C400E5132B /* Frameworks */,
+				6DFC50C51CB280C400E5132B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DFC50C91CB280C400E5132B /* PBXTargetDependency */,
+			);
+			name = QueuedAlertPresenterTests;
+			productName = QueuedAlertPresenterTests;
+			productReference = 6DFC50C71CB280C400E5132B /* QueuedAlertPresenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DFC50D11CB280C400E5132B /* QueuedAlertPresenterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFC50E11CB280C400E5132B /* Build configuration list for PBXNativeTarget "QueuedAlertPresenterUITests" */;
+			buildPhases = (
+				6DFC50CE1CB280C400E5132B /* Sources */,
+				6DFC50CF1CB280C400E5132B /* Frameworks */,
+				6DFC50D01CB280C400E5132B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DFC50D41CB280C400E5132B /* PBXTargetDependency */,
+			);
+			name = QueuedAlertPresenterUITests;
+			productName = QueuedAlertPresenterUITests;
+			productReference = 6DFC50D21CB280C400E5132B /* QueuedAlertPresenterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DFC50AB1CB280C300E5132B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SintraWorks;
+				TargetAttributes = {
+					6DFC50B21CB280C300E5132B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					6DFC50C61CB280C400E5132B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6DFC50B21CB280C300E5132B;
+					};
+					6DFC50D11CB280C400E5132B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6DFC50B21CB280C300E5132B;
+					};
+				};
+			};
+			buildConfigurationList = 6DFC50AE1CB280C300E5132B /* Build configuration list for PBXProject "QueuedAlertPresenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DFC50AA1CB280C300E5132B;
+			productRefGroup = 6DFC50B41CB280C300E5132B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DFC50B21CB280C300E5132B /* QueuedAlertPresenter */,
+				6DFC50C61CB280C400E5132B /* QueuedAlertPresenterTests */,
+				6DFC50D11CB280C400E5132B /* QueuedAlertPresenterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DFC50B11CB280C300E5132B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFC50C11CB280C400E5132B /* LaunchScreen.storyboard in Resources */,
+				6DFC50BE1CB280C400E5132B /* Assets.xcassets in Resources */,
+				6DFC50BC1CB280C400E5132B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFC50C51CB280C400E5132B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFC50D01CB280C400E5132B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DFC50AF1CB280C300E5132B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFC50B91CB280C400E5132B /* ViewController.swift in Sources */,
+				6DFC50B71CB280C400E5132B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFC50C31CB280C400E5132B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFC50CC1CB280C400E5132B /* QueuedAlertPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFC50CE1CB280C400E5132B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFC50D71CB280C400E5132B /* QueuedAlertPresenterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DFC50C91CB280C400E5132B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DFC50B21CB280C300E5132B /* QueuedAlertPresenter */;
+			targetProxy = 6DFC50C81CB280C400E5132B /* PBXContainerItemProxy */;
+		};
+		6DFC50D41CB280C400E5132B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DFC50B21CB280C300E5132B /* QueuedAlertPresenter */;
+			targetProxy = 6DFC50D31CB280C400E5132B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DFC50BA1CB280C400E5132B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DFC50BB1CB280C400E5132B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DFC50BF1CB280C400E5132B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DFC50C01CB280C400E5132B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DFC50D91CB280C400E5132B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DFC50DA1CB280C400E5132B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DFC50DC1CB280C400E5132B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QueuedAlertPresenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sintraworks.QueuedAlertPresenter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6DFC50DD1CB280C400E5132B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QueuedAlertPresenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sintraworks.QueuedAlertPresenter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6DFC50DF1CB280C400E5132B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QueuedAlertPresenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sintraworks.QueuedAlertPresenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QueuedAlertPresenter.app/QueuedAlertPresenter";
+			};
+			name = Debug;
+		};
+		6DFC50E01CB280C400E5132B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QueuedAlertPresenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sintraworks.QueuedAlertPresenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QueuedAlertPresenter.app/QueuedAlertPresenter";
+			};
+			name = Release;
+		};
+		6DFC50E21CB280C400E5132B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QueuedAlertPresenterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sintraworks.QueuedAlertPresenterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QueuedAlertPresenter;
+			};
+			name = Debug;
+		};
+		6DFC50E31CB280C400E5132B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QueuedAlertPresenterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sintraworks.QueuedAlertPresenterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QueuedAlertPresenter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DFC50AE1CB280C300E5132B /* Build configuration list for PBXProject "QueuedAlertPresenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFC50D91CB280C400E5132B /* Debug */,
+				6DFC50DA1CB280C400E5132B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DFC50DB1CB280C400E5132B /* Build configuration list for PBXNativeTarget "QueuedAlertPresenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFC50DC1CB280C400E5132B /* Debug */,
+				6DFC50DD1CB280C400E5132B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DFC50DE1CB280C400E5132B /* Build configuration list for PBXNativeTarget "QueuedAlertPresenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFC50DF1CB280C400E5132B /* Debug */,
+				6DFC50E01CB280C400E5132B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DFC50E11CB280C400E5132B /* Build configuration list for PBXNativeTarget "QueuedAlertPresenterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFC50E21CB280C400E5132B /* Debug */,
+				6DFC50E31CB280C400E5132B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DFC50AB1CB280C300E5132B /* Project object */;
+}
