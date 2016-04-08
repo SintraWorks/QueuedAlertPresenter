@@ -1,8 +1,8 @@
 //
-//  QueuedAlertPresenterTests.swift
-//  QueuedAlertPresenterTests
+//  UIViewController+Helpers.swift
+//  RandomReminders
 //
-//  Created by Antonio Nunes on 04/04/16.
+//  Created by Antonio Nunes on 17/02/16.
 //  Copyright © 2016 SintraWorks. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,31 +23,11 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-import XCTest
-@testable import QueuedAlertPresenter
+import UIKit
 
-class QueuedAlertPresenterTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+extension UIViewController {
+    func presentViewControllerOnMainThread(viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)?) {
+        let op = NSBlockOperation(block: { self.presentViewController(viewControllerToPresent, animated: flag, completion: completion) })
+        NSOperationQueue.mainQueue().addOperation(op)
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

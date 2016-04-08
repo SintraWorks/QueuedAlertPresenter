@@ -14,6 +14,8 @@
 		6DFC50C11CB280C400E5132B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFC50BF1CB280C400E5132B /* LaunchScreen.storyboard */; };
 		6DFC50CC1CB280C400E5132B /* QueuedAlertPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC50CB1CB280C400E5132B /* QueuedAlertPresenterTests.swift */; };
 		6DFC50D71CB280C400E5132B /* QueuedAlertPresenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC50D61CB280C400E5132B /* QueuedAlertPresenterUITests.swift */; };
+		6DFC50E61CB2820C00E5132B /* QueuedAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC50E41CB2820C00E5132B /* QueuedAlertPresenter.swift */; };
+		6DFC50E71CB2820C00E5132B /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC50E51CB2820C00E5132B /* UIViewController+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		6DFC50D21CB280C400E5132B /* QueuedAlertPresenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueuedAlertPresenterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFC50D61CB280C400E5132B /* QueuedAlertPresenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuedAlertPresenterUITests.swift; sourceTree = "<group>"; };
 		6DFC50D81CB280C400E5132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFC50E41CB2820C00E5132B /* QueuedAlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueuedAlertPresenter.swift; sourceTree = "<group>"; };
+		6DFC50E51CB2820C00E5132B /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
+		6DFC50E91CB853DE00E5132B /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		6DFC50EA1CB853DE00E5132B /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 		6DFC50AA1CB280C300E5132B = {
 			isa = PBXGroup;
 			children = (
+				6DFC50E91CB853DE00E5132B /* ReadMe.md */,
+				6DFC50EA1CB853DE00E5132B /* License.txt */,
 				6DFC50B51CB280C400E5132B /* QueuedAlertPresenter */,
 				6DFC50CA1CB280C400E5132B /* QueuedAlertPresenterTests */,
 				6DFC50D51CB280C400E5132B /* QueuedAlertPresenterUITests */,
@@ -97,6 +105,7 @@
 		6DFC50B51CB280C400E5132B /* QueuedAlertPresenter */ = {
 			isa = PBXGroup;
 			children = (
+				6DFC50E81CB2821200E5132B /* Presenter */,
 				6DFC50B61CB280C400E5132B /* AppDelegate.swift */,
 				6DFC50B81CB280C400E5132B /* ViewController.swift */,
 				6DFC50BA1CB280C400E5132B /* Main.storyboard */,
@@ -123,6 +132,15 @@
 				6DFC50D81CB280C400E5132B /* Info.plist */,
 			);
 			path = QueuedAlertPresenterUITests;
+			sourceTree = "<group>";
+		};
+		6DFC50E81CB2821200E5132B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6DFC50E41CB2820C00E5132B /* QueuedAlertPresenter.swift */,
+				6DFC50E51CB2820C00E5132B /* UIViewController+Helpers.swift */,
+			);
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DFC50E71CB2820C00E5132B /* UIViewController+Helpers.swift in Sources */,
 				6DFC50B91CB280C400E5132B /* ViewController.swift in Sources */,
 				6DFC50B71CB280C400E5132B /* AppDelegate.swift in Sources */,
+				6DFC50E61CB2820C00E5132B /* QueuedAlertPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -389,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

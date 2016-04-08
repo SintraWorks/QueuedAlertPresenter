@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QueuedAlertPresenter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,7 +16,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRv-wC-fYL">
+                                <rect key="frame" x="194" y="247" width="213" height="30"/>
+                                <state key="normal" title="Schedule alerts on main thread"/>
+                                <connections>
+                                    <action selector="scheduleAlertsOnMainThread:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwt-Wg-XV3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kO-jy-3vf">
+                                <rect key="frame" x="193" y="285" width="215" height="30"/>
+                                <state key="normal" title="Schedule alerts off main thread"/>
+                                <connections>
+                                    <action selector="scheduleAlertsOffMainThread:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UqJ-Lg-RCA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmE-O1-beh">
+                                <rect key="frame" x="197" y="323" width="206" height="30"/>
+                                <state key="normal" title="Schedule alerts multithreaded"/>
+                                <connections>
+                                    <action selector="scheduleAlertsMultiThreaded:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0E-Kj-baK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xmE-O1-beh" firstAttribute="top" secondItem="3kO-jy-3vf" secondAttribute="bottom" constant="8" id="33g-A1-Wpv"/>
+                            <constraint firstItem="oRv-wC-fYL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Vu-c8-sAV"/>
+                            <constraint firstItem="3kO-jy-3vf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XmX-WU-sM1"/>
+                            <constraint firstItem="oRv-wC-fYL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bLs-55-Jlp"/>
+                            <constraint firstItem="xmE-O1-beh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFQ-iI-8U6"/>
+                            <constraint firstItem="3kO-jy-3vf" firstAttribute="top" secondItem="oRv-wC-fYL" secondAttribute="bottom" constant="8" id="gjT-WA-ECe"/>
+                            <constraint firstItem="3kO-jy-3vf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tW0-lL-lMw"/>
+                            <constraint firstItem="3kO-jy-3vf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wel-hX-yu9"/>
+                            <constraint firstItem="oRv-wC-fYL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="win-Vh-he0"/>
+                            <constraint firstItem="3kO-jy-3vf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zjB-ij-fky"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Vu-c8-sAV"/>
+                                <exclude reference="bLs-55-Jlp"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
