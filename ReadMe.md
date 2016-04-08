@@ -8,8 +8,8 @@ Using QueuedAlertPresenter instead of UIAlertController directly, ensures your u
 To present an alert create an instance of AlertInfo then add it to the sharedAlertPresenter with addAlert(alertInfo).
 AlertInfo holds the information for an individual alert you want to present.
 
-![Demo app](https://sintraworks.github.io/ActionSheetController/Images/QueuedAlertPresenter!.png)
-![Sample Alert](https://sintraworks.github.io/ActionSheetController/Images/QueuedAlertPresenter!.png)
+![Demo app](https://sintraworks.github.io/QueuedAlertPresenter/Images/QueuedAlertPresenter!.png)
+![Sample Alert](https://sintraworks.github.io/QueuedAlertPresenter/Images/QueuedAlertPresenter!.png)
 
 QueuedAlertPresenter is written in **Swift**.
 
