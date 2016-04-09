@@ -1,7 +1,7 @@
 QueuedAlertPresenter
 ====
 
-A QueuedAlertPresenter serializes the presentation of alerts. Use it when your code needs to present alerts in rapid succession, where the user may not be able to keep up with the alerts.
+A QueuedAlertPresenter serializes the presentation of alerts. Use it when your code may present alerts in rapid succession, to ensure all alerts will be presented.
 
 Using QueuedAlertPresenter instead of UIAlertController directly, ensures your user gets to see all the alerts your code creates.
 
