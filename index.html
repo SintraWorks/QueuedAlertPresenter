@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">QueuedAlertpresenter</h1>
+      <h1 class="project-name">QueuedAlertPresenter</h1>
       <h2 class="project-tagline">A QueuedAlertPresenter serializes the presentation of alerts. Use it when your code may present alerts in rapid succession, to ensure all alerts will be presented.</h2>
       <a href="https://github.com/SintraWorks/QueuedAlertPresenter" class="btn">View on GitHub</a>
       <a href="https://github.com/SintraWorks/QueuedAlertPresenter/zipball/master" class="btn">Download .zip</a>
@@ -41,6 +41,8 @@ AlertInfo holds the information for an individual alert you want to present.</p>
     <span class="pl-k">let</span> alertInfo <span class="pl-k">=</span> AlertInfo(title: <span class="pl-s"><span class="pl-pds">"</span>Success<span class="pl-pds">"</span></span>, message: <span class="pl-s"><span class="pl-pds">"</span>Hey, this is alert nº <span class="pl-pse">\(</span><span class="pl-s1">i</span><span class="pl-pse">)</span><span class="pl-pds">"</span></span>, actions: [action])
     QueuedAlertPresenter<span class="pl-k">.</span>sharedAlertPresenter<span class="pl-k">.</span>addAlert(alertInfo)
 }</pre></div>
+
+<p>You can call addAlert() from any thread. See scheduleAlertsMultiThreaded() in ViewController.swift for an example.</p>
 
 <h3>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h3>
