@@ -138,11 +138,9 @@ public class QueuedAlertPresenter {
                 alertAction.enabled = infoAction.enabled
                 alertController.addAction(alertAction)
                 
-                if infoAction.isPreferredAction {
-                    if #available(iOS 9.0, *) {
+                if #available(iOS 9.0, *) {
+                    if infoAction.isPreferredAction {
                         alertController.preferredAction = alertAction
-                    } else {
-                        // Just ignore
                     }
                 }
             }

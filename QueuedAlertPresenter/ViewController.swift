@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         let presenter = QueuedAlertPresenter.sharedAlertPresenter
         let op = NSBlockOperation()
         
-        for i in 1...6 {
+        for i in 1...24 {
             op.addExecutionBlock({
                 let action = AlertAction(title: "Hit me", style: .Default, enabled: true, isPreferredAction: true, handler: nil)
                 let alertInfo = AlertInfo(title: "Success", message: "Hey, this is alert nº \(i)", actions: [action])

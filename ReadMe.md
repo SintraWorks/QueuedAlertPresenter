@@ -24,6 +24,8 @@ func showAlert() {
 }
 ```
 
+You can call addAlert() from any thread. See scheduleAlertsMultiThreaded() in ViewController.swift for an example.
+
 ###Requirements
 
 | Compile Time  | Runtime       |
