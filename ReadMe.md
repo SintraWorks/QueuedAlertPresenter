@@ -25,6 +25,10 @@ func showAlert() {
 
 You can call addAlert() from any thread. See scheduleAlertsMultiThreaded() in ViewController.swift for an example.
 
+###Integration
+
+To use QueuedAlertPresenter simply drag the files QueuedAlertPresenter.swift and UIViewController+Helpers.swift into your project.
+
 ###Requirements
 
 | Compile Time  | Runtime       |
