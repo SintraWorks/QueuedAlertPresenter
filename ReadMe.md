@@ -18,7 +18,7 @@ Usage
 ```swift
 func showAlert() {
     let action = AlertAction(title: "Hit me", style: .Default, enabled: true, isPreferredAction: true, handler: nil)
-    let alertInfo = AlertInfo(title: "Success", message: "Hey, this is alert nº \(i)", actions: [action])
+    let alertInfo = AlertInfo(title: "Success", message: "Hey, this is alert nº 1", actions: [action])
     QueuedAlertPresenter.sharedAlertPresenter.addAlert(alertInfo)
 }
 ```
