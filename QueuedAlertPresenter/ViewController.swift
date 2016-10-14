@@ -38,56 +38,56 @@ class ViewController: UIViewController {
     }
 
 
-    func scheduleAlerts(sender: UIButton) {
+    func scheduleAlerts(_ sender: UIButton) {
         let presenter = QueuedAlertPresenter.sharedAlertPresenter
         var action: AlertAction
         var alertInfo: AlertInfo
         
         for i in 1...4 {
-            action = AlertAction(title: "Hit me", style: .Default, enabled: true, isPreferredAction: true, handler: nil)
+            action = AlertAction(title: "Hit me", style: .default, enabled: true, isPreferredAction: true, handler: nil)
             alertInfo = AlertInfo(title: "Success", message: "Hey, this is alert nº \(i)", actions: [action])
             presenter.addAlert(alertInfo)
         }
         
-        action = AlertAction(title: "Done", style: .Default, enabled: true, isPreferredAction: true, handler: nil)
+        action = AlertAction(title: "Done", style: .default, enabled: true, isPreferredAction: true, handler: nil)
         alertInfo = AlertInfo(title: "Wonderful", message: "All alerts were shown in succession.", actions: [action])
         presenter.addAlert(alertInfo)
     }
     
     
-    @IBAction func scheduleAlertsOnMainThread(sender: UIButton) {
+    @IBAction func scheduleAlertsOnMainThread(_ sender: UIButton) {
         self.scheduleAlerts(sender)
     }
 
     
-    @IBAction func scheduleAlertsOffMainThread(sender: UIButton) {
-        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)) {
+    @IBAction func scheduleAlertsOffMainThread(_ sender: UIButton) {
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated).async {
             self.scheduleAlerts(sender)
         }
     }
 
     
-    @IBAction func scheduleAlertsMultiThreaded(sender: UIButton) {
+    @IBAction func scheduleAlertsMultiThreaded(_ sender: UIButton) {
         let presenter = QueuedAlertPresenter.sharedAlertPresenter
-        let op = NSBlockOperation()
+        let op = BlockOperation()
         
         for i in 1...24 {
             op.addExecutionBlock({
-                let action = AlertAction(title: "Hit me", style: .Default, enabled: true, isPreferredAction: true, handler: nil)
+                let action = AlertAction(title: "Hit me", style: .default, enabled: true, isPreferredAction: true, handler: nil)
                 let alertInfo = AlertInfo(title: "Success", message: "Hey, this is alert nº \(i)", actions: [action])
                 presenter.addAlert(alertInfo)
             })
         }
         
-        let finalOp = NSBlockOperation(block: {
-            let action = AlertAction(title: "Done", style: .Default, enabled: true, isPreferredAction: true, handler: nil)
+        let finalOp = BlockOperation(block: {
+            let action = AlertAction(title: "Done", style: .default, enabled: true, isPreferredAction: true, handler: nil)
             let alertInfo = AlertInfo(title: "Wonderful", message: "All alerts were shown in succession.", actions: [action])
             presenter.addAlert(alertInfo)
         })
         
         finalOp.addDependency(op)
         
-        let queue = NSOperationQueue()
+        let queue = OperationQueue()
         queue.addOperation(op)
         queue.addOperation(finalOp)
     }
