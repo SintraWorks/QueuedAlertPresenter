@@ -1,11 +1,69 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T8U-Q7-4US">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dummy-->
+        <scene sceneID="ED7-9A-wHa">
+            <objects>
+                <viewController id="1tU-aZ-t0w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6cl-ao-AKe"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ri-7Q-LoI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="atR-Dg-fMr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dummy" id="me3-Tz-ic3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xZS-qS-fvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-612" y="51"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kz9-kE-SCU">
+            <objects>
+                <tabBarController id="T8U-Q7-4US" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3rU-Hb-2HL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="N44-6x-FjB" kind="relationship" relationship="viewControllers" id="Kln-ZR-Vjt"/>
+                        <segue destination="1tU-aZ-t0w" kind="relationship" relationship="viewControllers" id="AS9-VR-Aub"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUH-Wp-OQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1564" y="-277"/>
+        </scene>
+        <!--Tester-->
+        <scene sceneID="hmU-be-nl7">
+            <objects>
+                <navigationController id="N44-6x-FjB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tester" id="fgp-fU-Mpb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5o3-TQ-9yo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vrZ-7R-04J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4aE-nY-uCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-612" y="-676"/>
+        </scene>
+        <!--Test Alerts-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QueuedAlertPresenter" customModuleProvider="target" sceneMemberID="viewController">
@@ -14,32 +72,32 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRv-wC-fYL">
-                                <rect key="frame" x="194" y="247" width="213" height="30"/>
+                                <rect key="frame" x="81" y="280" width="213" height="30"/>
                                 <state key="normal" title="Schedule alerts on main thread"/>
                                 <connections>
                                     <action selector="scheduleAlertsOnMainThread:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwt-Wg-XV3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kO-jy-3vf">
-                                <rect key="frame" x="193" y="285" width="215" height="30"/>
+                                <rect key="frame" x="80" y="318" width="215" height="30"/>
                                 <state key="normal" title="Schedule alerts off main thread"/>
                                 <connections>
                                     <action selector="scheduleAlertsOffMainThread:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UqJ-Lg-RCA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmE-O1-beh">
-                                <rect key="frame" x="197" y="323" width="206" height="30"/>
+                                <rect key="frame" x="84" y="356" width="206" height="30"/>
                                 <state key="normal" title="Schedule alerts multithreaded"/>
                                 <connections>
                                     <action selector="scheduleAlertsMultiThreaded:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0E-Kj-baK"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xmE-O1-beh" firstAttribute="top" secondItem="3kO-jy-3vf" secondAttribute="bottom" constant="8" id="33g-A1-Wpv"/>
                             <constraint firstItem="oRv-wC-fYL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Vu-c8-sAV"/>
@@ -59,9 +117,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Tester" id="mvL-no-v2W"/>
+                    <navigationItem key="navigationItem" title="Test Alerts" id="wgc-TR-xhs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="260" y="-676"/>
         </scene>
     </scenes>
 </document>

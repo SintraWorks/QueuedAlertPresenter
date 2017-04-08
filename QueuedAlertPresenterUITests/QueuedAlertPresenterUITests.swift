@@ -54,7 +54,7 @@ class QueuedAlertPresenterUITests: XCTestCase {
         app.buttons["Schedule alerts on main thread"].tap()
         
         let alert = app.alerts["Success"]
-        let hitMeButton = alert.collectionViews.buttons["Hit me"]
+        let hitMeButton = alert.buttons["Hit me"]
         XCTAssert(hitMeButton.exists)
         
         XCTAssert(alert.staticTexts["Hey, this is alert nº 1"].exists)
