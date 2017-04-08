@@ -161,5 +161,5 @@ open class QueuedAlertPresenter {
         }
 
         return validController
-    }    
+    }
 }
